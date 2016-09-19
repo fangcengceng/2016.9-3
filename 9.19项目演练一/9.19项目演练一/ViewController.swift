@@ -62,6 +62,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         return cell
        
     }
+    //选中某一行
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = DetailViewController()
          _ = navigationController?.pushViewController(vc, animated: true)
