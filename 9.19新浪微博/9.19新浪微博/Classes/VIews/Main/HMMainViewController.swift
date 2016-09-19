@@ -12,7 +12,14 @@ class HMMainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //将图片颜色修改为原来的颜色，方法有两种：一种是设置图片的渲染模式，一种是设置tabbar 的属性
+        
+    //添加中间的加号按钮，采用OC的动态的方法
+//        self.tabBar = HMTabBar()//这是一个只读属性，不能赋值，如果赋值的话，以后啊滴啊用OCde 机制
+        
+                let addtabbar = HMTabBar()
+                setValue(addtabbar, forKey: "tabBar")//key值是一个属性
+        
+        //将图片颜色修改为图片本身的颜色，方法有两种：一种是设置图片的渲染模式，一种是设置tabbar 的属性
 //        UITabBar.appearance().tintColor = UIColor.orange
 
         
@@ -39,9 +46,6 @@ class HMMainViewController: UITabBarController {
 //            
 //            
 //        }
-        
-        
-        
         
         //        childController.tabBarItem.title = title //默认字体颜色与大小
 

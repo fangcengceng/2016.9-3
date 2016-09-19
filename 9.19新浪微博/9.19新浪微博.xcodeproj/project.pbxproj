@@ -11,6 +11,7 @@
 		2083A07A1D900898006BA3DB /* HMDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A0791D900898006BA3DB /* HMDiscoverViewController.swift */; };
 		2083A07C1D9008A3006BA3DB /* HMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A07B1D9008A3006BA3DB /* HMMessageViewController.swift */; };
 		2083A07E1D9008B1006BA3DB /* HMProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A07D1D9008B1006BA3DB /* HMProfilesViewController.swift */; };
+		2083A0801D901A7F006BA3DB /* HMTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A07F1D901A7F006BA3DB /* HMTabBar.swift */; };
 		20BEEC821D8F8AB7004C1190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BEEC811D8F8AB7004C1190 /* AppDelegate.swift */; };
 		20BEEC891D8F8AB7004C1190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BEEC881D8F8AB7004C1190 /* Assets.xcassets */; };
 		20BEECA31D8FBB62004C1190 /* HMMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BEECA01D8FBB62004C1190 /* HMMainViewController.swift */; };
@@ -21,6 +22,7 @@
 		2083A0791D900898006BA3DB /* HMDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMDiscoverViewController.swift; sourceTree = "<group>"; };
 		2083A07B1D9008A3006BA3DB /* HMMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMMessageViewController.swift; sourceTree = "<group>"; };
 		2083A07D1D9008B1006BA3DB /* HMProfilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMProfilesViewController.swift; sourceTree = "<group>"; };
+		2083A07F1D901A7F006BA3DB /* HMTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMTabBar.swift; sourceTree = "<group>"; };
 		20BEEC7E1D8F8AB7004C1190 /* 9.19新浪微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "9.19新浪微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BEEC811D8F8AB7004C1190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20BEEC881D8F8AB7004C1190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				20BEECA01D8FBB62004C1190 /* HMMainViewController.swift */,
+				2083A07F1D901A7F006BA3DB /* HMTabBar.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				2083A0781D900882006BA3DB /* HMHomeTableViewController.swift in Sources */,
 				20BEECA31D8FBB62004C1190 /* HMMainViewController.swift in Sources */,
 				20BEEC821D8F8AB7004C1190 /* AppDelegate.swift in Sources */,
+				2083A0801D901A7F006BA3DB /* HMTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
