@@ -36,9 +36,36 @@ class HMTabBar: UITabBar {
     }
     
     //添加子控件的主方法，设置为私用的
-   func setupUI() {
+     private  func setupUI() {
         addSubview(customButton)
-    }
+     }
     
+    //让自定义按钮居中
+    override func layoutSubviews() {
+      super.layoutSubviews()
+        //设置按钮的中心点
+        customButton.center.x = frame.size.width*0.5
+        customButton.center.y = frame.size.height*0.5
+        //计算每个控件的宽度
+        let itemWidth = frame.size.width*0.2
+        //记录遍历到的是第几个控件的索引
+        var index = 0
+        
+        //遍历控件
+        for value in subviews{
+            
+            if value.isKind(of: NSClassFromString("UITabBarButton")!){
+                value.frame.size.width = itemWidth
+                value.frame.origin.x = CGFloat(index)*itemWidth
+                index += 1
+                //如果是第二个按钮，预留出来位置给加号anniu
+                if index == 2{
+                    index += 1
+                }
+            }
+            
+        }
+        
+    }
 
 }
