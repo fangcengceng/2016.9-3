@@ -24,7 +24,6 @@
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TZv-Sg-7Hc">
                     <constraints>
-                        <constraint firstAttribute="width" constant="375" id="Hfl-Pm-xYP"/>
                         <constraint firstAttribute="height" constant="30" id="uTP-rc-ko6"/>
                     </constraints>
                     <nil key="textColor"/>
@@ -41,6 +40,7 @@
                 <constraint firstItem="6kH-YE-RR7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="MR6-Eq-nFf"/>
                 <constraint firstAttribute="trailing" secondItem="6kH-YE-RR7" secondAttribute="trailing" id="YPT-sL-1ZW"/>
                 <constraint firstAttribute="trailing" secondItem="TZv-Sg-7Hc" secondAttribute="trailing" id="aaC-hk-JYZ"/>
+                <constraint firstItem="TZv-Sg-7Hc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="te0-Cg-X7Z"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
