@@ -13,9 +13,14 @@ class HMProfilesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        setupNav()
     }
-
-   
-
+    
+    func setupNav(){
+        //设置左侧的按钮
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "登陆")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册")
+        
+    }
 }

@@ -7,12 +7,28 @@
 //
 
 import UIKit
-
+//方法二，通过代理，让控制器去做事情
+protocol HMTabBarDelegate:NSObjectProtocol {
+  //代理方法
+    func didSelectedAddButton()
+    
+}
 class HMTabBar: UITabBar {
+   
+  //定义代理对象
+    weak var hmDelegate: HMTabBarDelegate?
 
+    //方法一，通过创建闭包，让控制器去做事情
+    var addclosure: (()->())?
+    
     //懒加载创建底部的记号按钮
     lazy var customButton: UIButton = {
         let button = UIButton()
+        //按钮的点击，让控制器去push,有闭包，代理
+        button.addTarget(self, action: #selector(clickaddButton), for: .touchUpInside)
+        
+        
+        
         //按钮图片
         button.setImage(UIImage(named:"tabbar_compose_icon_add"), for: .normal)
         button.setImage(UIImage(named:"tabbar_compose_icon_add_highlighted") , for: .highlighted)
@@ -23,6 +39,15 @@ class HMTabBar: UITabBar {
 
         return button
     }()
+    
+    //中间按钮的点击事件
+    func clickaddButton(){
+        //执行闭包
+        addclosure!()
+        //执行代理
+       hmDelegate?.didSelectedAddButton()
+    }
+    
     
     //重写构造方法
     override init(frame: CGRect) {

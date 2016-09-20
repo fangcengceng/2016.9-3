@@ -13,12 +13,15 @@ class HMMessageViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        setupNav()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func setupNav(){
+        //设置左侧的按钮
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "登陆")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册")
+        
     }
     
 

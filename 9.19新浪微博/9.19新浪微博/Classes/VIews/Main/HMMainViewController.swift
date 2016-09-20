@@ -18,6 +18,12 @@ class HMMainViewController: UITabBarController {
         
                 let addtabbar = HMTabBar()
                 setValue(addtabbar, forKey: "tabBar")//key值是一个属性
+        //执行闭包,要使用弱引用
+        addtabbar.addclosure = { [weak self] in
+            print("我是闭包传递过来的")
+        }
+        //执行代理
+        addtabbar.hmDelegate = self
         
         //将图片颜色修改为图片本身的颜色，方法有两种：一种是设置图片的渲染模式，一种是设置tabbar 的属性
 //        UITabBar.appearance().tintColor = UIColor.orange
@@ -62,4 +68,14 @@ class HMMainViewController: UITabBarController {
         addChildViewController(nav)
     }
 
+    
+    
+    
+    
+}
+extension HMMainViewController:HMTabBarDelegate{
+    //执行代理方法
+    func didSelectedAddButton() {
+        print("我是代理传递过来的")
+    }
 }

@@ -12,6 +12,10 @@
 		2083A07C1D9008A3006BA3DB /* HMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A07B1D9008A3006BA3DB /* HMMessageViewController.swift */; };
 		2083A07E1D9008B1006BA3DB /* HMProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A07D1D9008B1006BA3DB /* HMProfilesViewController.swift */; };
 		2083A0801D901A7F006BA3DB /* HMTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A07F1D901A7F006BA3DB /* HMTabBar.swift */; };
+		2083A0841D902EC0006BA3DB /* HMVIew + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A0831D902EC0006BA3DB /* HMVIew + extension.swift */; };
+		2083A0861D9036E9006BA3DB /* UIBarButtonItem+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A0851D9036E9006BA3DB /* UIBarButtonItem+Extention.swift */; };
+		2083A0881D903ACB006BA3DB /* HMDIscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A0871D903ACB006BA3DB /* HMDIscoverView.swift */; };
+		2083A08A1D903ADA006BA3DB /* HMDIscoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2083A0891D903ADA006BA3DB /* HMDIscoverView.xib */; };
 		20BEEC821D8F8AB7004C1190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BEEC811D8F8AB7004C1190 /* AppDelegate.swift */; };
 		20BEEC891D8F8AB7004C1190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BEEC881D8F8AB7004C1190 /* Assets.xcassets */; };
 		20BEECA31D8FBB62004C1190 /* HMMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BEECA01D8FBB62004C1190 /* HMMainViewController.swift */; };
@@ -23,6 +27,10 @@
 		2083A07B1D9008A3006BA3DB /* HMMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMMessageViewController.swift; sourceTree = "<group>"; };
 		2083A07D1D9008B1006BA3DB /* HMProfilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMProfilesViewController.swift; sourceTree = "<group>"; };
 		2083A07F1D901A7F006BA3DB /* HMTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMTabBar.swift; sourceTree = "<group>"; };
+		2083A0831D902EC0006BA3DB /* HMVIew + extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HMVIew + extension.swift"; sourceTree = "<group>"; };
+		2083A0851D9036E9006BA3DB /* UIBarButtonItem+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extention.swift"; sourceTree = "<group>"; };
+		2083A0871D903ACB006BA3DB /* HMDIscoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMDIscoverView.swift; sourceTree = "<group>"; };
+		2083A0891D903ADA006BA3DB /* HMDIscoverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMDIscoverView.xib; sourceTree = "<group>"; };
 		20BEEC7E1D8F8AB7004C1190 /* 9.19新浪微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "9.19新浪微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BEEC811D8F8AB7004C1190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20BEEC881D8F8AB7004C1190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +104,8 @@
 		20BEEC9A1D8FBB62004C1190 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				2083A0831D902EC0006BA3DB /* HMVIew + extension.swift */,
+				2083A0851D9036E9006BA3DB /* UIBarButtonItem+Extention.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -116,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				2083A0791D900898006BA3DB /* HMDiscoverViewController.swift */,
+				2083A0871D903ACB006BA3DB /* HMDIscoverView.swift */,
+				2083A0891D903ADA006BA3DB /* HMDIscoverView.xib */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -213,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2083A08A1D903ADA006BA3DB /* HMDIscoverView.xib in Resources */,
 				20BEEC891D8F8AB7004C1190 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,8 +240,11 @@
 				2083A07C1D9008A3006BA3DB /* HMMessageViewController.swift in Sources */,
 				2083A07E1D9008B1006BA3DB /* HMProfilesViewController.swift in Sources */,
 				2083A07A1D900898006BA3DB /* HMDiscoverViewController.swift in Sources */,
+				2083A0841D902EC0006BA3DB /* HMVIew + extension.swift in Sources */,
+				2083A0881D903ACB006BA3DB /* HMDIscoverView.swift in Sources */,
 				2083A0781D900882006BA3DB /* HMHomeTableViewController.swift in Sources */,
 				20BEECA31D8FBB62004C1190 /* HMMainViewController.swift in Sources */,
+				2083A0861D9036E9006BA3DB /* UIBarButtonItem+Extention.swift in Sources */,
 				20BEEC821D8F8AB7004C1190 /* AppDelegate.swift in Sources */,
 				2083A0801D901A7F006BA3DB /* HMTabBar.swift in Sources */,
 			);

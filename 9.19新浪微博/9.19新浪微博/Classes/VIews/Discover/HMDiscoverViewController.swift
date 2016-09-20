@@ -13,12 +13,17 @@ class HMDiscoverViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //类方法自定义搜索视图
+        navigationItem.titleView = HMDIscoverView.searchView()
+        
+       // setupNav()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+  private  func setupNav(){
+        //设置左侧的按钮
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "登陆")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册")
+        
     }
     
 
