@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		207D21901D92CA6C00A25C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D218F1D92CA6C00A25C19 /* AppDelegate.swift */; };
+		207D21971D92CA6D00A25C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 207D21961D92CA6D00A25C19 /* Assets.xcassets */; };
+		207D21AD1D92CF0300A25C19 /* FCCTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21A81D92CF0300A25C19 /* FCCTabBarViewController.swift */; };
+		207D21AF1D92D0B900A25C19 /* FCCHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21AE1D92D0B900A25C19 /* FCCHomeTableViewController.swift */; };
+		207D21B11D92D3A200A25C19 /* FCCMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21B01D92D3A200A25C19 /* FCCMessageTableViewController.swift */; };
+		207D21B31D92D3B000A25C19 /* FCCDiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21B21D92D3B000A25C19 /* FCCDiscoverTableViewController.swift */; };
+		207D21B51D92D3BC00A25C19 /* FCCProfilesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21B41D92D3BC00A25C19 /* FCCProfilesTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		207D218C1D92CA6C00A25C19 /* FCCSinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCCSinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		207D218F1D92CA6C00A25C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FCCSinaWeibo/AppDelegate.swift; sourceTree = "<group>"; };
+		207D21961D92CA6D00A25C19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = FCCSinaWeibo/Assets.xcassets; sourceTree = "<group>"; };
+		207D219B1D92CA6D00A25C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = FCCSinaWeibo/Info.plist; sourceTree = "<group>"; };
+		207D21A81D92CF0300A25C19 /* FCCTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCTabBarViewController.swift; sourceTree = "<group>"; };
+		207D21AE1D92D0B900A25C19 /* FCCHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCHomeTableViewController.swift; sourceTree = "<group>"; };
+		207D21B01D92D3A200A25C19 /* FCCMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCMessageTableViewController.swift; sourceTree = "<group>"; };
+		207D21B21D92D3B000A25C19 /* FCCDiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCDiscoverTableViewController.swift; sourceTree = "<group>"; };
+		207D21B41D92D3BC00A25C19 /* FCCProfilesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCProfilesTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		207D21891D92CA6C00A25C19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		207D21831D92CA6C00A25C19 = {
+			isa = PBXGroup;
+			children = (
+				207D218E1D92CA6C00A25C19 /* FCCSinaWeibo */,
+				207D218D1D92CA6C00A25C19 /* Products */,
+				207D218F1D92CA6C00A25C19 /* AppDelegate.swift */,
+				207D21961D92CA6D00A25C19 /* Assets.xcassets */,
+				207D219B1D92CA6D00A25C19 /* Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		207D218D1D92CA6C00A25C19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				207D218C1D92CA6C00A25C19 /* FCCSinaWeibo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		207D218E1D92CA6C00A25C19 /* FCCSinaWeibo */ = {
+			isa = PBXGroup;
+			children = (
+				207D21A31D92CF0300A25C19 /* Classes */,
+			);
+			path = FCCSinaWeibo;
+			sourceTree = "<group>";
+		};
+		207D21A31D92CF0300A25C19 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				207D21A41D92CF0300A25C19 /* Controllers */,
+				207D21AB1D92CF0300A25C19 /* Models */,
+				207D21AC1D92CF0300A25C19 /* VIews */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		207D21A41D92CF0300A25C19 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				207D21A71D92CF0300A25C19 /* Main */,
+				207D21A61D92CF0300A25C19 /* Home */,
+				207D21A91D92CF0300A25C19 /* Message */,
+				207D21A51D92CF0300A25C19 /* Find */,
+				207D21AA1D92CF0300A25C19 /* Profiles */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		207D21A51D92CF0300A25C19 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				207D21B21D92D3B000A25C19 /* FCCDiscoverTableViewController.swift */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		207D21A61D92CF0300A25C19 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				207D21AE1D92D0B900A25C19 /* FCCHomeTableViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		207D21A71D92CF0300A25C19 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				207D21A81D92CF0300A25C19 /* FCCTabBarViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		207D21A91D92CF0300A25C19 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				207D21B01D92D3A200A25C19 /* FCCMessageTableViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		207D21AA1D92CF0300A25C19 /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				207D21B41D92D3BC00A25C19 /* FCCProfilesTableViewController.swift */,
+			);
+			path = Profiles;
+			sourceTree = "<group>";
+		};
+		207D21AB1D92CF0300A25C19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		207D21AC1D92CF0300A25C19 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		207D218B1D92CA6C00A25C19 /* FCCSinaWeibo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 207D219E1D92CA6D00A25C19 /* Build configuration list for PBXNativeTarget "FCCSinaWeibo" */;
+			buildPhases = (
+				207D21881D92CA6C00A25C19 /* Sources */,
+				207D21891D92CA6C00A25C19 /* Frameworks */,
+				207D218A1D92CA6C00A25C19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FCCSinaWeibo;
+			productName = FCCSinaWeibo;
+			productReference = 207D218C1D92CA6C00A25C19 /* FCCSinaWeibo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		207D21841D92CA6C00A25C19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FCC;
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = HM;
+				TargetAttributes = {
+					207D218B1D92CA6C00A25C19 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 207D21871D92CA6C00A25C19 /* Build configuration list for PBXProject "FCCSinaWeibo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 207D21831D92CA6C00A25C19;
+			productRefGroup = 207D218D1D92CA6C00A25C19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				207D218B1D92CA6C00A25C19 /* FCCSinaWeibo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		207D218A1D92CA6C00A25C19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				207D21971D92CA6D00A25C19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		207D21881D92CA6C00A25C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				207D21B51D92D3BC00A25C19 /* FCCProfilesTableViewController.swift in Sources */,
+				207D21901D92CA6C00A25C19 /* AppDelegate.swift in Sources */,
+				207D21AD1D92CF0300A25C19 /* FCCTabBarViewController.swift in Sources */,
+				207D21B11D92D3A200A25C19 /* FCCMessageTableViewController.swift in Sources */,
+				207D21AF1D92D0B900A25C19 /* FCCHomeTableViewController.swift in Sources */,
+				207D21B31D92D3B000A25C19 /* FCCDiscoverTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		207D219C1D92CA6D00A25C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		207D219D1D92CA6D00A25C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		207D219F1D92CA6D00A25C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = FCCSinaWeibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.itheima.FCCSinaWeibo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		207D21A01D92CA6D00A25C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = FCCSinaWeibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.itheima.FCCSinaWeibo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		207D21871D92CA6C00A25C19 /* Build configuration list for PBXProject "FCCSinaWeibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				207D219C1D92CA6D00A25C19 /* Debug */,
+				207D219D1D92CA6D00A25C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		207D219E1D92CA6D00A25C19 /* Build configuration list for PBXNativeTarget "FCCSinaWeibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				207D219F1D92CA6D00A25C19 /* Debug */,
+				207D21A01D92CA6D00A25C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 207D21841D92CA6C00A25C19 /* Project object */;
+}
