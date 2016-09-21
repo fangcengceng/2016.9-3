@@ -23,6 +23,7 @@ class HMProfilesViewController: UITableViewController {
     
     //右侧的push按钮
     func addrightPushItem()  {
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(title:"push", target:self, action:#selector(rightPushItemAction))
         
     }

@@ -11,11 +11,14 @@ import UIKit
 
 extension UIBarButtonItem{
     //创建遍历构造函数
-    convenience init(title: String,target:Any?, action:Selector) {
+    convenience init(title: String,imageName:String? = nil, target:Any?, action:Selector) {
         //调用父类的
         self.init()
         //创建一个button 
         let button = UIButton()
+        if imageName != nil{
+            button.setImage(UIImage(named:imageName!), for: .normal)
+        }
         //设置字体颜色和大小
         button.setTitle(title, for: .normal)
         button.setTitleColor(UIColor.darkGray, for: .normal)
