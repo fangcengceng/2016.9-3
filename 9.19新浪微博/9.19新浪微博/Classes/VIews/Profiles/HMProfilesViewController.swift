@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HMProfilesViewController: UIViewController {
+class HMProfilesViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,19 +21,20 @@ class HMProfilesViewController: UIViewController {
         
     }
     
-    //右侧的朴实按钮
+    //右侧的push按钮
     func addrightPushItem()  {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title:"push", target:self, action:#selector(rightPushItemAction))
         
     }
     
+    //右侧的push按钮的点击事件
     func rightPushItemAction() {
         let testc = HMTestViewController()
         navigationController?.pushViewController(testc, animated: true)
     }
     
     func setupNav(){
-//        //设置左侧的按钮
+        
 //        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "登陆")
 //        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册")
         

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		207D215D1D92178900A25C19 /* HMTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D215C1D92178900A25C19 /* HMTestViewController.swift */; };
+		207D215F1D92213800A25C19 /* HMNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D215E1D92213800A25C19 /* HMNavViewController.swift */; };
 		2083A0781D900882006BA3DB /* HMHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A0771D900882006BA3DB /* HMHomeTableViewController.swift */; };
 		2083A07A1D900898006BA3DB /* HMDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A0791D900898006BA3DB /* HMDiscoverViewController.swift */; };
 		2083A07C1D9008A3006BA3DB /* HMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A07B1D9008A3006BA3DB /* HMMessageViewController.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		207D215C1D92178900A25C19 /* HMTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMTestViewController.swift; sourceTree = "<group>"; };
+		207D215E1D92213800A25C19 /* HMNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMNavViewController.swift; sourceTree = "<group>"; };
 		2083A0771D900882006BA3DB /* HMHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMHomeTableViewController.swift; sourceTree = "<group>"; };
 		2083A0791D900898006BA3DB /* HMDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMDiscoverViewController.swift; sourceTree = "<group>"; };
 		2083A07B1D9008A3006BA3DB /* HMMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMMessageViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +60,8 @@
 			children = (
 				207D215C1D92178900A25C19 /* HMTestViewController.swift */,
 			);
-			path = Test;
+			name = Test;
+			path = ../Test;
 			sourceTree = "<group>";
 		};
 		208F7A251D90B9780020002D /* View */ = {
@@ -135,7 +138,6 @@
 		20BEEC9B1D8FBB62004C1190 /* VIews */ = {
 			isa = PBXGroup;
 			children = (
-				207D215B1D92175200A25C19 /* Test */,
 				20BEEC9F1D8FBB62004C1190 /* Main */,
 				20BEEC9D1D8FBB62004C1190 /* Home */,
 				20BEEC9C1D8FBB62004C1190 /* Discover */,
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				20BEECA01D8FBB62004C1190 /* HMMainViewController.swift */,
+				207D215E1D92213800A25C19 /* HMNavViewController.swift */,
 				2083A07F1D901A7F006BA3DB /* HMTabBar.swift */,
 			);
 			path = Main;
@@ -183,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				2083A07D1D9008B1006BA3DB /* HMProfilesViewController.swift */,
+				207D215B1D92175200A25C19 /* Test */,
 			);
 			path = Profiles;
 			sourceTree = "<group>";
@@ -271,6 +275,7 @@
 				207D215D1D92178900A25C19 /* HMTestViewController.swift in Sources */,
 				2083A0801D901A7F006BA3DB /* HMTabBar.swift in Sources */,
 				208F7A2B1D90B9780020002D /* HMTextField.swift in Sources */,
+				207D215F1D92213800A25C19 /* HMNavViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
