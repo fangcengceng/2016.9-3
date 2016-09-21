@@ -42,8 +42,10 @@ class HMNavViewController: UINavigationController,UIGestureRecognizerDelegate {
               viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "返回",imageName: "navigationbar_back_withtext", target: self, action: #selector(backAction))
             }
             viewController.title = "当前显示的是第\(viewControllers.count+1)级控制器"
+//            隐藏底部的tabbar
+            viewController.hidesBottomBarWhenPushed = true
+
         }
-        
         
       //先调用父类的super方法，否则下面的四个控制器，显示不出来
         super.pushViewController(viewController, animated: true)
