@@ -10,6 +10,19 @@
 		207D215D1D92178900A25C19 /* HMTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D215C1D92178900A25C19 /* HMTestViewController.swift */; };
 		207D215F1D92213800A25C19 /* HMNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D215E1D92213800A25C19 /* HMNavViewController.swift */; };
 		207D21611D925A9600A25C19 /* HMVistorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21601D925A9600A25C19 /* HMVistorTableViewController.swift */; };
+		207D21631D9260BD00A25C19 /* HMVistorVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21621D9260BD00A25C19 /* HMVistorVIew.swift */; };
+		207D21721D92778000A25C19 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21651D92778000A25C19 /* Constraint.swift */; };
+		207D21731D92778000A25C19 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21661D92778000A25C19 /* ConstraintAttributes.swift */; };
+		207D21741D92778000A25C19 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21671D92778000A25C19 /* ConstraintDescription.swift */; };
+		207D21751D92778000A25C19 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21681D92778000A25C19 /* ConstraintItem.swift */; };
+		207D21761D92778000A25C19 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21691D92778000A25C19 /* ConstraintMaker.swift */; };
+		207D21771D92778000A25C19 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D216A1D92778000A25C19 /* ConstraintRelation.swift */; };
+		207D21781D92778000A25C19 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D216B1D92778000A25C19 /* Debugging.swift */; };
+		207D21791D92778000A25C19 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D216C1D92778000A25C19 /* EdgeInsets.swift */; };
+		207D217A1D92778000A25C19 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D216D1D92778000A25C19 /* LayoutConstraint.swift */; };
+		207D217B1D92778000A25C19 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D216F1D92778000A25C19 /* SnapKit.swift */; };
+		207D217C1D92778000A25C19 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21701D92778000A25C19 /* View+SnapKit.swift */; };
+		207D217D1D92778000A25C19 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21711D92778000A25C19 /* ViewController+SnapKit.swift */; };
 		2083A0781D900882006BA3DB /* HMHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A0771D900882006BA3DB /* HMHomeTableViewController.swift */; };
 		2083A07A1D900898006BA3DB /* HMDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A0791D900898006BA3DB /* HMDiscoverViewController.swift */; };
 		2083A07C1D9008A3006BA3DB /* HMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A07B1D9008A3006BA3DB /* HMMessageViewController.swift */; };
@@ -29,6 +42,20 @@
 		207D215C1D92178900A25C19 /* HMTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMTestViewController.swift; sourceTree = "<group>"; };
 		207D215E1D92213800A25C19 /* HMNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMNavViewController.swift; sourceTree = "<group>"; };
 		207D21601D925A9600A25C19 /* HMVistorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMVistorTableViewController.swift; sourceTree = "<group>"; };
+		207D21621D9260BD00A25C19 /* HMVistorVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMVistorVIew.swift; sourceTree = "<group>"; };
+		207D21651D92778000A25C19 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		207D21661D92778000A25C19 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
+		207D21671D92778000A25C19 /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
+		207D21681D92778000A25C19 /* ConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
+		207D21691D92778000A25C19 /* ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
+		207D216A1D92778000A25C19 /* ConstraintRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
+		207D216B1D92778000A25C19 /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
+		207D216C1D92778000A25C19 /* EdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeInsets.swift; sourceTree = "<group>"; };
+		207D216D1D92778000A25C19 /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		207D216E1D92778000A25C19 /* SnapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
+		207D216F1D92778000A25C19 /* SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
+		207D21701D92778000A25C19 /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
+		207D21711D92778000A25C19 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
 		2083A0771D900882006BA3DB /* HMHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMHomeTableViewController.swift; sourceTree = "<group>"; };
 		2083A0791D900898006BA3DB /* HMDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMDiscoverViewController.swift; sourceTree = "<group>"; };
 		2083A07B1D9008A3006BA3DB /* HMMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMMessageViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +93,26 @@
 			path = ../Test;
 			sourceTree = "<group>";
 		};
+		207D21641D92778000A25C19 /* SnapKit修改版 2 */ = {
+			isa = PBXGroup;
+			children = (
+				207D21651D92778000A25C19 /* Constraint.swift */,
+				207D21661D92778000A25C19 /* ConstraintAttributes.swift */,
+				207D21671D92778000A25C19 /* ConstraintDescription.swift */,
+				207D21681D92778000A25C19 /* ConstraintItem.swift */,
+				207D21691D92778000A25C19 /* ConstraintMaker.swift */,
+				207D216A1D92778000A25C19 /* ConstraintRelation.swift */,
+				207D216B1D92778000A25C19 /* Debugging.swift */,
+				207D216C1D92778000A25C19 /* EdgeInsets.swift */,
+				207D216D1D92778000A25C19 /* LayoutConstraint.swift */,
+				207D216E1D92778000A25C19 /* SnapKit.h */,
+				207D216F1D92778000A25C19 /* SnapKit.swift */,
+				207D21701D92778000A25C19 /* View+SnapKit.swift */,
+				207D21711D92778000A25C19 /* ViewController+SnapKit.swift */,
+			);
+			path = "SnapKit修改版 2";
+			sourceTree = "<group>";
+		};
 		208F7A251D90B9780020002D /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +145,7 @@
 				20BEEC811D8F8AB7004C1190 /* AppDelegate.swift */,
 				20BEEC881D8F8AB7004C1190 /* Assets.xcassets */,
 				20BEEC8D1D8F8AB8004C1190 /* Info.plist */,
+				207D21641D92778000A25C19 /* SnapKit修改版 2 */,
 				20BEEC971D8FBB62004C1190 /* Classes */,
 			);
 			path = "9.19新浪微博";
@@ -172,6 +220,7 @@
 				20BEECA01D8FBB62004C1190 /* HMMainViewController.swift */,
 				207D215E1D92213800A25C19 /* HMNavViewController.swift */,
 				207D21601D925A9600A25C19 /* HMVistorTableViewController.swift */,
+				207D21621D9260BD00A25C19 /* HMVistorVIew.swift */,
 				2083A07F1D901A7F006BA3DB /* HMTabBar.swift */,
 			);
 			path = Main;
@@ -266,20 +315,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				207D21721D92778000A25C19 /* Constraint.swift in Sources */,
+				207D21761D92778000A25C19 /* ConstraintMaker.swift in Sources */,
+				207D217B1D92778000A25C19 /* SnapKit.swift in Sources */,
+				207D21731D92778000A25C19 /* ConstraintAttributes.swift in Sources */,
 				2083A07C1D9008A3006BA3DB /* HMMessageViewController.swift in Sources */,
+				207D21781D92778000A25C19 /* Debugging.swift in Sources */,
+				207D21751D92778000A25C19 /* ConstraintItem.swift in Sources */,
 				2083A07E1D9008B1006BA3DB /* HMProfilesViewController.swift in Sources */,
 				2083A07A1D900898006BA3DB /* HMDiscoverViewController.swift in Sources */,
 				2083A0841D902EC0006BA3DB /* HMVIew + extension.swift in Sources */,
 				208F7A291D90B9780020002D /* HMDIscoverView.swift in Sources */,
 				207D21611D925A9600A25C19 /* HMVistorTableViewController.swift in Sources */,
+				207D21771D92778000A25C19 /* ConstraintRelation.swift in Sources */,
+				207D217D1D92778000A25C19 /* ViewController+SnapKit.swift in Sources */,
 				2083A0781D900882006BA3DB /* HMHomeTableViewController.swift in Sources */,
+				207D21631D9260BD00A25C19 /* HMVistorVIew.swift in Sources */,
 				20BEECA31D8FBB62004C1190 /* HMMainViewController.swift in Sources */,
 				2083A0861D9036E9006BA3DB /* UIBarButtonItem+Extention.swift in Sources */,
 				20BEEC821D8F8AB7004C1190 /* AppDelegate.swift in Sources */,
+				207D21791D92778000A25C19 /* EdgeInsets.swift in Sources */,
 				207D215D1D92178900A25C19 /* HMTestViewController.swift in Sources */,
 				2083A0801D901A7F006BA3DB /* HMTabBar.swift in Sources */,
+				207D217A1D92778000A25C19 /* LayoutConstraint.swift in Sources */,
 				208F7A2B1D90B9780020002D /* HMTextField.swift in Sources */,
 				207D215F1D92213800A25C19 /* HMNavViewController.swift in Sources */,
+				207D21741D92778000A25C19 /* ConstraintDescription.swift in Sources */,
+				207D217C1D92778000A25C19 /* View+SnapKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

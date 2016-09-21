@@ -18,8 +18,8 @@ class HMVistorTableViewController: UITableViewController {
             
         }else{
             //否则提供自定义视图
-            let visitorView = UIView()
-            visitorView.backgroundColor = UIColor.red
+            let visitorView = HMVistorVIew()
+          
             view = visitorView
             setupNav()
         }

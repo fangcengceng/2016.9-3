@@ -13,8 +13,11 @@ class HMDiscoverViewController: HMVistorTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //类方法自定义搜索视图
-        navigationItem.titleView = HMDIscoverView.searchView()
+        
+        //类方法自定义搜索视图，在登陆后显示
+        if isloging{
+           navigationItem.titleView = HMDIscoverView.searchView()
+        }
     }
     
 

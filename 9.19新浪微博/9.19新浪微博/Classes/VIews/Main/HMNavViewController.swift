@@ -29,7 +29,7 @@ class HMNavViewController: UINavigationController,UIGestureRecognizerDelegate {
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         
         print("------")
-        print(viewControllers.count)
+        print(viewControllers.count,"我是自定义nav控制器来的")
         
         //获取上一级控制器的title
         let title = viewControllers.first?.title
