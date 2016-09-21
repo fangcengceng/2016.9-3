@@ -16,6 +16,7 @@ extension UIBarButtonItem{
         self.init()
         //创建一个button 
         let button = UIButton()
+       // button .addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         if imageName != nil{
             button.setImage(UIImage(named:imageName!), for: .normal)
         }
@@ -29,6 +30,10 @@ extension UIBarButtonItem{
         button.addTarget(target, action: action, for: .touchUpInside)
     }
     
+    func buttonAction() {
+        
+        print("我是barbutton分类来的")
+    }
     
     
 }

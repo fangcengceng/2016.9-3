@@ -19,6 +19,9 @@ class HMVistorTableViewController: UITableViewController {
         }else{
             //否则提供自定义视图
              visitorView = HMVistorVIew()
+            visitorView?.loginAndRegisterClosure = {
+                print("我是访客视图的闭包")
+            }
             view = visitorView
             setupNav()
         }

@@ -9,6 +9,11 @@
 import UIKit
 
 class HMVistorVIew: UIView {
+    
+    //注册回调闭包
+    var loginAndRegisterClosure: (()->())?
+    
+    
     //添加子控件,懒加载
    private lazy var cycleImage: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_smallicon"))
     private lazy var maskImage: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_mask_smallicon"))
@@ -28,6 +33,7 @@ class HMVistorVIew: UIView {
     private lazy var loginButton: UIButton = {
         let button = UIButton()
         button.setTitle("登陆", for: .normal)
+        button.addTarget(self, action: #selector(loginAction), for: .touchUpInside)
         button.setBackgroundImage(UIImage(named:"common_button_white_disable"), for: .normal)
         button.setTitleColor(UIColor.gray, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 19)
@@ -39,6 +45,7 @@ class HMVistorVIew: UIView {
     private lazy var registerButton: UIButton = {
         let button = UIButton()
         button.setTitle("注册", for: .normal)
+         button.addTarget(self, action: #selector(registerAction), for: .touchUpInside)
         button.setBackgroundImage(UIImage(named:"common_button_white_disable"), for: .normal)
         button.setTitleColor(UIColor.gray, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 19)
@@ -86,6 +93,7 @@ class HMVistorVIew: UIView {
         //登陆按钮
         loginButton.translatesAutoresizingMaskIntoConstraints = false
              addConstraint(NSLayoutConstraint(item: loginButton, attribute: .left, relatedBy: .equal , toItem: cycleImage, attribute: .left, multiplier: 1, constant: -20))
+        
             addConstraint(NSLayoutConstraint(item: loginButton, attribute: .right, relatedBy: .equal, toItem: cycleImage, attribute: .left, multiplier: 1, constant: 40))
             addConstraint(NSLayoutConstraint(item: loginButton, attribute: .top, relatedBy: .equal, toItem: cycleImage, attribute: .bottom, multiplier: 1, constant: 70))
         //注册按钮
@@ -138,6 +146,14 @@ class HMVistorVIew: UIView {
     }
     
     
+    //登陆按钮的点击事件
+    func loginAction()  {
+        loginAndRegisterClosure!()
+    }
+    //注册按钮的点击事件
+    func registerAction()  {
+        loginAndRegisterClosure!()
+    }
 
     //END
 }
