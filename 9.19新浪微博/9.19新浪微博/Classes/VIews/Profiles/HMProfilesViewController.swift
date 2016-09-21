@@ -14,13 +14,28 @@ class HMProfilesViewController: UIViewController {
         super.viewDidLoad()
 
         
-        setupNav()
+        //setupNav()
+        
+        //添加右侧的push按钮
+        addrightPushItem()
+        
+    }
+    
+    //右侧的朴实按钮
+    func addrightPushItem()  {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title:"push", target:self, action:#selector(rightPushItemAction))
+        
+    }
+    
+    func rightPushItemAction() {
+        let testc = HMTestViewController()
+        navigationController?.pushViewController(testc, animated: true)
     }
     
     func setupNav(){
-        //设置左侧的按钮
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "登陆")
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册")
+//        //设置左侧的按钮
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "登陆")
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册")
         
     }
 }

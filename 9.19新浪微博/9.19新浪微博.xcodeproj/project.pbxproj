@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		207D215D1D92178900A25C19 /* HMTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D215C1D92178900A25C19 /* HMTestViewController.swift */; };
 		2083A0781D900882006BA3DB /* HMHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A0771D900882006BA3DB /* HMHomeTableViewController.swift */; };
 		2083A07A1D900898006BA3DB /* HMDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A0791D900898006BA3DB /* HMDiscoverViewController.swift */; };
 		2083A07C1D9008A3006BA3DB /* HMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A07B1D9008A3006BA3DB /* HMMessageViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		207D215C1D92178900A25C19 /* HMTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMTestViewController.swift; sourceTree = "<group>"; };
 		2083A0771D900882006BA3DB /* HMHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMHomeTableViewController.swift; sourceTree = "<group>"; };
 		2083A0791D900898006BA3DB /* HMDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMDiscoverViewController.swift; sourceTree = "<group>"; };
 		2083A07B1D9008A3006BA3DB /* HMMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMMessageViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		207D215B1D92175200A25C19 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				207D215C1D92178900A25C19 /* HMTestViewController.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		208F7A251D90B9780020002D /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +135,7 @@
 		20BEEC9B1D8FBB62004C1190 /* VIews */ = {
 			isa = PBXGroup;
 			children = (
+				207D215B1D92175200A25C19 /* Test */,
 				20BEEC9F1D8FBB62004C1190 /* Main */,
 				20BEEC9D1D8FBB62004C1190 /* Home */,
 				20BEEC9C1D8FBB62004C1190 /* Discover */,
@@ -257,6 +268,7 @@
 				20BEECA31D8FBB62004C1190 /* HMMainViewController.swift in Sources */,
 				2083A0861D9036E9006BA3DB /* UIBarButtonItem+Extention.swift in Sources */,
 				20BEEC821D8F8AB7004C1190 /* AppDelegate.swift in Sources */,
+				207D215D1D92178900A25C19 /* HMTestViewController.swift in Sources */,
 				2083A0801D901A7F006BA3DB /* HMTabBar.swift in Sources */,
 				208F7A2B1D90B9780020002D /* HMTextField.swift in Sources */,
 			);

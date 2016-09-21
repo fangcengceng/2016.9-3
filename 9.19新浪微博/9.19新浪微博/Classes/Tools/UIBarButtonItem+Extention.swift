@@ -11,7 +11,7 @@ import UIKit
 
 extension UIBarButtonItem{
     //创建遍历构造函数
-    convenience init(title: String) {
+    convenience init(title: String,target:Any?, action:Selector) {
         //调用父类的
         self.init()
         //创建一个button 
@@ -23,8 +23,7 @@ extension UIBarButtonItem{
         button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         customView = button
         button.sizeToFit()
-        
-        
+        button.addTarget(target, action: action, for: .touchUpInside)
     }
     
     
