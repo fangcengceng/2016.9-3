@@ -8,21 +8,15 @@
 
 import UIKit
 
-class HMHomeTableViewController: UITableViewController {
+class HMHomeTableViewController: HMVistorTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         //设置导航栏按钮
         
-        setupNav()
+       
     }
 
-   private  func setupNav(){
-       //设置左侧的按钮
-//        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "登陆")
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册")
-        
-    }
-
+  
 }
