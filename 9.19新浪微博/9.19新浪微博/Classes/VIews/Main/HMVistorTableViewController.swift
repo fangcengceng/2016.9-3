@@ -11,15 +11,14 @@ import UIKit
 class HMVistorTableViewController: UITableViewController {
     
     var isloging:Bool = false
+    var visitorView: HMVistorVIew?
     //自定义视图控制器
     override func loadView() {
         if isloging{
             super.loadView()
-            
         }else{
             //否则提供自定义视图
-            let visitorView = HMVistorVIew()
-          
+             visitorView = HMVistorVIew()
             view = visitorView
             setupNav()
         }

@@ -47,13 +47,10 @@ class HMVistorVIew: UIView {
         return button
     }()
     
-    
-
     //重写初始化方法
     override init(frame: CGRect) {
          super.init(frame: frame)
         setupUI()
-        
     }
     //如果是加载Xib来的，报错误信息
     required init?(coder aDecoder: NSCoder) {
@@ -111,9 +108,36 @@ class HMVistorVIew: UIView {
         
     }
     
+  //修改访客视图的信息
+
+    func  updateVisitorInfo(text:String?,imgeName:String?) {
+        if let tex = text, let imagename = imgeName{
+            //执行到此，表示是消息，发现，我的控制器
+            textLabel.text = tex
+            houseImage.image = UIImage(named: imagename)
+            cycleImage.isHidden = true
+        }else{
+            //执行动画
+            cycleAnimation()
+            
+        }
+        
+    }
+    
+    //动画方法
+   private func cycleAnimation() {
+        let anmi = CABasicAnimation(keyPath: "transform.rotation")
+    anmi.toValue = M_PI * 2
+   
+    anmi.repeatDuration = 20
+     anmi.repeatCount = MAXFLOAT
+    anmi.isRemovedOnCompletion = false
+    //添加动画
+    cycleImage.layer.add(anmi, forKey: nil)
   
+    }
     
     
-    
+
     //END
 }

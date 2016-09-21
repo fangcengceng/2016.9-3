@@ -14,6 +14,9 @@ class HMHomeTableViewController: HMVistorTableViewController {
         super.viewDidLoad()
 
         //设置导航栏按钮
+        if !isloging {
+            visitorView?.updateVisitorInfo(text: nil, imgeName: nil)
+        }
         
        
     }

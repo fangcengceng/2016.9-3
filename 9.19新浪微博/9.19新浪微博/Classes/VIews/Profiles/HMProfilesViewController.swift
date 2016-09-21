@@ -14,10 +14,12 @@ class HMProfilesViewController: HMVistorTableViewController {
         super.viewDidLoad()
         
         //添加右侧的push按钮
-        addrightPushItem()
-        
+        if isloging{
+            addrightPushItem()
+        }else{
+           visitorView?.updateVisitorInfo(text: "登录后，你的微博、相册、个人资料会显示在这里，展示给别人", imgeName: "visitordiscover_image_profile")
+        }
     }
-    
     //右侧的push按钮
     func addrightPushItem()  {
         

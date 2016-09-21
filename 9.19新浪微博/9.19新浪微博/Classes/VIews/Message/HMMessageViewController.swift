@@ -12,7 +12,9 @@ class HMMessageViewController: HMVistorTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if !isloging{
+            visitorView?.updateVisitorInfo(text: "登录后，别人评论你的微博，发给你的消息，都会在这里收到通知", imgeName: "visitordiscover_image_message")
+        }
         
         
     }
