@@ -17,11 +17,14 @@ class HMNavViewController: UINavigationController {
        
     }
 
-    //自定义NavViewControuler ,重写push 方法，拿到有几个控制器
+//    //自定义NavViewControuler ,重写push 方法，拿到有几个控制器
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
-       
+      
         print("-------")
         print(childViewControllers.count)
+        
+        //一定要重写父类的push方法，否则下面的四个根控制器无法显示
+        super.pushViewController(viewController, animated: true)
         
     }
 

@@ -62,9 +62,10 @@ class HMMainViewController: UITabBarController {
         //设置图片
         childController.tabBarItem.image = UIImage.init(named: imageName)
         childController.tabBarItem.selectedImage = UIImage.init(named: "\(imageName)_selected")?.withRenderingMode(.alwaysOriginal)
-        let nav = HMNavViewController.init(rootViewController: childController)
         //设置导航条标题，并且将其包成nav
         childController.title = title
+        let nav = HMNavViewController.init(rootViewController: childController)
+        
         addChildViewController(nav)
     }
 
