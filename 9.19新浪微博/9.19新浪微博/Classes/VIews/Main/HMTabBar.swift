@@ -57,12 +57,15 @@ class HMTabBar: UITabBar {
     }
     //重写加载方法
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        setupUI()
     }
     
     //添加子控件的主方法，设置为私用的
      private  func setupUI() {
         addSubview(customButton)
+         backgroundImage = UIImage(named: "tabbar_background")
+        
      }
     
     //让自定义按钮居中
