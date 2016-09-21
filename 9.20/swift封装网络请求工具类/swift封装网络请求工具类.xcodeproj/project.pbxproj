@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20AD23D31D918BF50040A13B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD23D21D918BF50040A13B /* AppDelegate.swift */; };
+		20AD23D51D918BF50040A13B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD23D41D918BF50040A13B /* ViewController.swift */; };
+		20AD23D81D918BF50040A13B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AD23D61D918BF50040A13B /* Main.storyboard */; };
+		20AD23DA1D918BF50040A13B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20AD23D91D918BF50040A13B /* Assets.xcassets */; };
+		20AD23DD1D918BF50040A13B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AD23DB1D918BF50040A13B /* LaunchScreen.storyboard */; };
+		20AD23E51D918C150040A13B /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD23E41D918C150040A13B /* NetworkTool.swift */; };
+		30217F5C1301AB648781D78F /* Pods_swift_________.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F1A7FCF0190423FE3B56D1 /* Pods_swift_________.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20AD23CF1D918BF50040A13B /* swift封装网络请求工具类.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift封装网络请求工具类.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20AD23D21D918BF50040A13B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20AD23D41D918BF50040A13B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20AD23D71D918BF50040A13B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20AD23D91D918BF50040A13B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "swift封装网络请求工具类/Assets.xcassets"; sourceTree = "<group>"; };
+		20AD23DC1D918BF50040A13B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20AD23DE1D918BF50040A13B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "swift封装网络请求工具类/Info.plist"; sourceTree = "<group>"; };
+		20AD23E41D918C150040A13B /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
+		43F1A7FCF0190423FE3B56D1 /* Pods_swift_________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_swift_________.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFDCD80D7C72D3F27A03C228 /* Pods-swift封装网络请求工具类.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift封装网络请求工具类.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift封装网络请求工具类/Pods-swift封装网络请求工具类.debug.xcconfig"; sourceTree = "<group>"; };
+		DC84F11AB4D5A161701C2080 /* Pods-swift封装网络请求工具类.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift封装网络请求工具类.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift封装网络请求工具类/Pods-swift封装网络请求工具类.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20AD23CC1D918BF50040A13B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30217F5C1301AB648781D78F /* Pods_swift_________.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1313C5F997C20751ACBC2487 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFDCD80D7C72D3F27A03C228 /* Pods-swift封装网络请求工具类.debug.xcconfig */,
+				DC84F11AB4D5A161701C2080 /* Pods-swift封装网络请求工具类.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		20AD23C61D918BF50040A13B = {
+			isa = PBXGroup;
+			children = (
+				20AD23D11D918BF50040A13B /* swift封装网络请求工具类 */,
+				20AD23D01D918BF50040A13B /* Products */,
+				20AD23D61D918BF50040A13B /* Main.storyboard */,
+				20AD23D91D918BF50040A13B /* Assets.xcassets */,
+				20AD23DB1D918BF50040A13B /* LaunchScreen.storyboard */,
+				20AD23DE1D918BF50040A13B /* Info.plist */,
+				1313C5F997C20751ACBC2487 /* Pods */,
+				DEE72DC421464FDFC47AEE99 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		20AD23D01D918BF50040A13B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20AD23CF1D918BF50040A13B /* swift封装网络请求工具类.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20AD23D11D918BF50040A13B /* swift封装网络请求工具类 */ = {
+			isa = PBXGroup;
+			children = (
+				20AD23D21D918BF50040A13B /* AppDelegate.swift */,
+				20AD23D41D918BF50040A13B /* ViewController.swift */,
+				20AD23E41D918C150040A13B /* NetworkTool.swift */,
+			);
+			path = "swift封装网络请求工具类";
+			sourceTree = "<group>";
+		};
+		DEE72DC421464FDFC47AEE99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43F1A7FCF0190423FE3B56D1 /* Pods_swift_________.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20AD23CE1D918BF50040A13B /* swift封装网络请求工具类 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20AD23E11D918BF50040A13B /* Build configuration list for PBXNativeTarget "swift封装网络请求工具类" */;
+			buildPhases = (
+				09D48546D01C3768AB23D41C /* [CP] Check Pods Manifest.lock */,
+				20AD23CB1D918BF50040A13B /* Sources */,
+				20AD23CC1D918BF50040A13B /* Frameworks */,
+				20AD23CD1D918BF50040A13B /* Resources */,
+				971A47C9D813CB2458A301AC /* [CP] Embed Pods Frameworks */,
+				E0FBA5B20A3B13B072283AE4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift封装网络请求工具类";
+			productName = "swift封装网络请求工具类";
+			productReference = 20AD23CF1D918BF50040A13B /* swift封装网络请求工具类.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20AD23C71D918BF50040A13B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = HM;
+				TargetAttributes = {
+					20AD23CE1D918BF50040A13B = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 20AD23CA1D918BF50040A13B /* Build configuration list for PBXProject "swift封装网络请求工具类" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20AD23C61D918BF50040A13B;
+			productRefGroup = 20AD23D01D918BF50040A13B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20AD23CE1D918BF50040A13B /* swift封装网络请求工具类 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20AD23CD1D918BF50040A13B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AD23DD1D918BF50040A13B /* LaunchScreen.storyboard in Resources */,
+				20AD23DA1D918BF50040A13B /* Assets.xcassets in Resources */,
+				20AD23D81D918BF50040A13B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09D48546D01C3768AB23D41C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		971A47C9D813CB2458A301AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift封装网络请求工具类/Pods-swift封装网络请求工具类-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0FBA5B20A3B13B072283AE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift封装网络请求工具类/Pods-swift封装网络请求工具类-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20AD23CB1D918BF50040A13B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AD23D51D918BF50040A13B /* ViewController.swift in Sources */,
+				20AD23E51D918C150040A13B /* NetworkTool.swift in Sources */,
+				20AD23D31D918BF50040A13B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		20AD23D61D918BF50040A13B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20AD23D71D918BF50040A13B /* Base */,
+			);
+			name = Main.storyboard;
+			path = "swift封装网络请求工具类";
+			sourceTree = "<group>";
+		};
+		20AD23DB1D918BF50040A13B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20AD23DC1D918BF50040A13B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = "swift封装网络请求工具类";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20AD23DF1D918BF50040A13B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20AD23E01D918BF50040A13B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20AD23E21D918BF50040A13B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFDCD80D7C72D3F27A03C228 /* Pods-swift封装网络请求工具类.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "swift封装网络请求工具类/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.itheima.swift---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		20AD23E31D918BF50040A13B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC84F11AB4D5A161701C2080 /* Pods-swift封装网络请求工具类.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "swift封装网络请求工具类/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.itheima.swift---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20AD23CA1D918BF50040A13B /* Build configuration list for PBXProject "swift封装网络请求工具类" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20AD23DF1D918BF50040A13B /* Debug */,
+				20AD23E01D918BF50040A13B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20AD23E11D918BF50040A13B /* Build configuration list for PBXNativeTarget "swift封装网络请求工具类" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20AD23E21D918BF50040A13B /* Debug */,
+				20AD23E31D918BF50040A13B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20AD23C71D918BF50040A13B /* Project object */;
+}

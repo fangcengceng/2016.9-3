@@ -1,0 +1,6 @@
+framework module Pods_swift__________ {
+  umbrella header "Pods-swift封装网络请求工具类一-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,5 @@
+ platform :ios, '9.0'
+
+target 'oc网络封装工具类' do
+pod 'AFNetworking'
+end
