@@ -19,8 +19,10 @@ class HMVistorTableViewController: UITableViewController {
         }else{
             //否则提供自定义视图
              visitorView = HMVistorVIew()
-            visitorView?.loginAndRegisterClosure = {
-                print("我是访客视图的闭包")
+            //回调访客视图闭包,跳转到新浪注册按钮,注意循环引用
+            visitorView?.loginAndRegisterClosure = { [weak self] in
+                self?.sinaregisterVC()
+                
             }
             view = visitorView
             setupNav()
@@ -46,10 +48,13 @@ class HMVistorTableViewController: UITableViewController {
   
     }
     
+   private func sinaregisterVC() {
+       let sinavc = HMHMOAuthViewController()
+    //如果直接push，会调用自定义的navcontrller,我们需要的是系统提供的,如果只是present 就没有导航栏，无法返回
+    let nav = UINavigationController(rootViewController: sinavc)
+       present(nav, animated: true, completion: nil)
     
+    }
     
-    
-    
-
     //END
 }

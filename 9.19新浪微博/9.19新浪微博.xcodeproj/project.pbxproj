@@ -23,6 +23,7 @@
 		207D217B1D92778000A25C19 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D216F1D92778000A25C19 /* SnapKit.swift */; };
 		207D217C1D92778000A25C19 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21701D92778000A25C19 /* View+SnapKit.swift */; };
 		207D217D1D92778000A25C19 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21711D92778000A25C19 /* ViewController+SnapKit.swift */; };
+		207D21821D92897400A25C19 /* HMHMOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21811D92897400A25C19 /* HMHMOAuthViewController.swift */; };
 		2083A0781D900882006BA3DB /* HMHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A0771D900882006BA3DB /* HMHomeTableViewController.swift */; };
 		2083A07A1D900898006BA3DB /* HMDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A0791D900898006BA3DB /* HMDiscoverViewController.swift */; };
 		2083A07C1D9008A3006BA3DB /* HMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083A07B1D9008A3006BA3DB /* HMMessageViewController.swift */; };
@@ -56,6 +57,7 @@
 		207D216F1D92778000A25C19 /* SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
 		207D21701D92778000A25C19 /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
 		207D21711D92778000A25C19 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
+		207D21811D92897400A25C19 /* HMHMOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMHMOAuthViewController.swift; sourceTree = "<group>"; };
 		2083A0771D900882006BA3DB /* HMHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMHomeTableViewController.swift; sourceTree = "<group>"; };
 		2083A0791D900898006BA3DB /* HMDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMDiscoverViewController.swift; sourceTree = "<group>"; };
 		2083A07B1D9008A3006BA3DB /* HMMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMMessageViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,15 @@
 				207D21711D92778000A25C19 /* ViewController+SnapKit.swift */,
 			);
 			path = "SnapKit修改版 2";
+			sourceTree = "<group>";
+		};
+		207D21801D92897400A25C19 /* SINAregister */ = {
+			isa = PBXGroup;
+			children = (
+				207D21811D92897400A25C19 /* HMHMOAuthViewController.swift */,
+			);
+			name = SINAregister;
+			path = Main/SINAregister;
 			sourceTree = "<group>";
 		};
 		208F7A251D90B9780020002D /* View */ = {
@@ -188,6 +199,7 @@
 		20BEEC9B1D8FBB62004C1190 /* VIews */ = {
 			isa = PBXGroup;
 			children = (
+				207D21801D92897400A25C19 /* SINAregister */,
 				20BEEC9F1D8FBB62004C1190 /* Main */,
 				20BEEC9D1D8FBB62004C1190 /* Home */,
 				20BEEC9C1D8FBB62004C1190 /* Discover */,
@@ -319,6 +331,7 @@
 				207D21761D92778000A25C19 /* ConstraintMaker.swift in Sources */,
 				207D217B1D92778000A25C19 /* SnapKit.swift in Sources */,
 				207D21731D92778000A25C19 /* ConstraintAttributes.swift in Sources */,
+				207D21821D92897400A25C19 /* HMHMOAuthViewController.swift in Sources */,
 				2083A07C1D9008A3006BA3DB /* HMMessageViewController.swift in Sources */,
 				207D21781D92778000A25C19 /* Debugging.swift in Sources */,
 				207D21751D92778000A25C19 /* ConstraintItem.swift in Sources */,
