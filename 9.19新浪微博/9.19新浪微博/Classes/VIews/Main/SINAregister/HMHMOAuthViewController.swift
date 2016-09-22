@@ -9,9 +9,9 @@
 import UIKit
 
 //新浪授权appket
-let weiboAppKey = "2707543009"
+let weiboAppKey = "1799735418"
 //新浪授权回调页
-let weiboRedirect_Uri = "http://www.itcast.cn"
+let weiboRedirect_Uri = "http://www.bejson.com/jsonviewernew"
 
 class HMHMOAuthViewController: UIViewController {
 
@@ -20,7 +20,7 @@ class HMHMOAuthViewController: UIViewController {
     //自定义视图
     override func loadView() {
         //解决背景的黑条问题
-        outhView.isOpaque = false
+      
         
         view = outhView
         
@@ -30,17 +30,19 @@ class HMHMOAuthViewController: UIViewController {
         view.backgroundColor = UIColor.white
         //准备url
         let urlStr = "https://api.weibo.com/oauth2/authorize?client_id=\(weiboAppKey)&redirect_uri=\(weiboRedirect_Uri)"
+        print(urlStr)
+        
+        
         let urlRequest = URLRequest(url: URL(string: urlStr)!)
         
-     //加载数据
+     //加载数据,并解决背景黑条问题
+          outhView.isOpaque = false
         outhView.loadRequest(urlRequest)
         
+        //获取授权码code
+        outhView.delegate = self
         
-        
-        
-        //加载百度网页，因为只是加载网页，不涉及到任何get，post请求
-//        outhView.loadRequest(URLRequest.init(url: URL(string: "http://www.baidu.com")!))
-
+    addNavItem()
     }
 
     //添加导航栏左右按钮
@@ -49,7 +51,7 @@ class HMHMOAuthViewController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "自动填充", target: self, action: #selector(autoFillAction))
     }
     @objc private func autoFillAction(){
-        outhView.stringByEvaluatingJavaScript(from: "document.getElementById('userId').value = 'hao123guohaibin@163.com';document.getElementById('passwd').value = 'guohaibin123'")
+        outhView.stringByEvaluatingJavaScript(from: "document.getElementById('userId').value = '13140103066';document.getElementById('passwd').value = 'fcc198709166'")
         
     }
     
@@ -60,4 +62,65 @@ class HMHMOAuthViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    //END
 }
+
+//分类，webview代理
+extension HMHMOAuthViewController:UIWebViewDelegate{
+    
+    
+    //将要准备加载
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        //判断url是否合法
+        guard let url = request.url else {
+            print("url不合法")
+            return  false
+            
+        }
+        
+        print(url.absoluteString)
+        
+        if  !url.absoluteString .hasPrefix(weiboRedirect_Uri){
+            //表示不是我们关心的
+            return true
+        }
+        
+        //代码执行到此，表示是我们关心的请求参数，获取，地址的参数，获得授权
+        if let query = url.query , query.hasPrefix("code=") {
+            //  根据光标的结束位置获取子串
+            print(query)
+            let code = query.substring(from: "code=".endIndex)
+            
+            print(code)
+        }
+        
+        
+        
+        
+        
+        //return true表示网页可以加载，return false 表示禁止网页加载
+        return false
+    }
+    
+
+
+    //开始加载
+    func webViewDidStartLoad(_ webView: UIWebView) {
+        print("webViewDidStartLoad")
+        
+    }
+    //结束加载
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        print("")
+    }
+    //加载失败
+    func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
+        
+    }
+    
+    
+    
+    
+}
+
+

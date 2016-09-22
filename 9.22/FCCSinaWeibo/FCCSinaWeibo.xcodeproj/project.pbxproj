@@ -14,6 +14,24 @@
 		207D21B11D92D3A200A25C19 /* FCCMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21B01D92D3A200A25C19 /* FCCMessageTableViewController.swift */; };
 		207D21B31D92D3B000A25C19 /* FCCDiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21B21D92D3B000A25C19 /* FCCDiscoverTableViewController.swift */; };
 		207D21B51D92D3BC00A25C19 /* FCCProfilesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21B41D92D3BC00A25C19 /* FCCProfilesTableViewController.swift */; };
+		207D21B71D92D8EF00A25C19 /* FCCVistorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21B61D92D8EF00A25C19 /* FCCVistorTableViewController.swift */; };
+		207D21D91D92DFD500A25C19 /* FCCSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21D81D92DFD500A25C19 /* FCCSearchView.swift */; };
+		207D22031D92E5A800A25C19 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21F61D92E5A800A25C19 /* Constraint.swift */; };
+		207D22041D92E5A800A25C19 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21F71D92E5A800A25C19 /* ConstraintAttributes.swift */; };
+		207D22051D92E5A800A25C19 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21F81D92E5A800A25C19 /* ConstraintDescription.swift */; };
+		207D22061D92E5A800A25C19 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21F91D92E5A800A25C19 /* ConstraintItem.swift */; };
+		207D22071D92E5A800A25C19 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21FA1D92E5A800A25C19 /* ConstraintMaker.swift */; };
+		207D22081D92E5A800A25C19 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21FB1D92E5A800A25C19 /* ConstraintRelation.swift */; };
+		207D22091D92E5A800A25C19 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21FC1D92E5A800A25C19 /* Debugging.swift */; };
+		207D220A1D92E5A800A25C19 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21FD1D92E5A800A25C19 /* EdgeInsets.swift */; };
+		207D220B1D92E5A800A25C19 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D21FE1D92E5A800A25C19 /* LayoutConstraint.swift */; };
+		207D220C1D92E5A800A25C19 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D22001D92E5A800A25C19 /* SnapKit.swift */; };
+		207D220D1D92E5A800A25C19 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D22011D92E5A800A25C19 /* View+SnapKit.swift */; };
+		207D220E1D92E5A800A25C19 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D22021D92E5A800A25C19 /* ViewController+SnapKit.swift */; };
+		207D22101D92F5FE00A25C19 /* FCCShowTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D220F1D92F5FD00A25C19 /* FCCShowTitleViewController.swift */; };
+		207D22121D92F70F00A25C19 /* FCCNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D22111D92F70F00A25C19 /* FCCNavViewController.swift */; };
+		207D22151D92FAC400A25C19 /* FCCBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D22141D92FAC400A25C19 /* FCCBarButtonItem.swift */; };
+		20C3C7481D9360B9007561DC /* FCCTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C3C7471D9360B9007561DC /* FCCTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +44,25 @@
 		207D21B01D92D3A200A25C19 /* FCCMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCMessageTableViewController.swift; sourceTree = "<group>"; };
 		207D21B21D92D3B000A25C19 /* FCCDiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCDiscoverTableViewController.swift; sourceTree = "<group>"; };
 		207D21B41D92D3BC00A25C19 /* FCCProfilesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCProfilesTableViewController.swift; sourceTree = "<group>"; };
+		207D21B61D92D8EF00A25C19 /* FCCVistorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCVistorTableViewController.swift; sourceTree = "<group>"; };
+		207D21D81D92DFD500A25C19 /* FCCSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCSearchView.swift; sourceTree = "<group>"; };
+		207D21F61D92E5A800A25C19 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		207D21F71D92E5A800A25C19 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
+		207D21F81D92E5A800A25C19 /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
+		207D21F91D92E5A800A25C19 /* ConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
+		207D21FA1D92E5A800A25C19 /* ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
+		207D21FB1D92E5A800A25C19 /* ConstraintRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
+		207D21FC1D92E5A800A25C19 /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
+		207D21FD1D92E5A800A25C19 /* EdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeInsets.swift; sourceTree = "<group>"; };
+		207D21FE1D92E5A800A25C19 /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		207D21FF1D92E5A800A25C19 /* SnapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
+		207D22001D92E5A800A25C19 /* SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
+		207D22011D92E5A800A25C19 /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
+		207D22021D92E5A800A25C19 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
+		207D220F1D92F5FD00A25C19 /* FCCShowTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCShowTitleViewController.swift; sourceTree = "<group>"; };
+		207D22111D92F70F00A25C19 /* FCCNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCNavViewController.swift; sourceTree = "<group>"; };
+		207D22141D92FAC400A25C19 /* FCCBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCBarButtonItem.swift; sourceTree = "<group>"; };
+		20C3C7471D9360B9007561DC /* FCCTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +98,7 @@
 		207D218E1D92CA6C00A25C19 /* FCCSinaWeibo */ = {
 			isa = PBXGroup;
 			children = (
+				207D21F41D92E5A800A25C19 /* tools */,
 				207D21A31D92CF0300A25C19 /* Classes */,
 			);
 			path = FCCSinaWeibo;
@@ -79,6 +117,7 @@
 		207D21A41D92CF0300A25C19 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				207D22131D92FAC400A25C19 /* extension */,
 				207D21A71D92CF0300A25C19 /* Main */,
 				207D21A61D92CF0300A25C19 /* Home */,
 				207D21A91D92CF0300A25C19 /* Message */,
@@ -92,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				207D21B21D92D3B000A25C19 /* FCCDiscoverTableViewController.swift */,
+				207D21D81D92DFD500A25C19 /* FCCSearchView.swift */,
 			);
 			path = Find;
 			sourceTree = "<group>";
@@ -108,6 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				207D21A81D92CF0300A25C19 /* FCCTabBarViewController.swift */,
+				207D22111D92F70F00A25C19 /* FCCNavViewController.swift */,
+				207D21B61D92D8EF00A25C19 /* FCCVistorTableViewController.swift */,
+				20C3C7471D9360B9007561DC /* FCCTabBar.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -124,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				207D21B41D92D3BC00A25C19 /* FCCProfilesTableViewController.swift */,
+				207D220F1D92F5FD00A25C19 /* FCCShowTitleViewController.swift */,
 			);
 			path = Profiles;
 			sourceTree = "<group>";
@@ -140,6 +184,42 @@
 			children = (
 			);
 			path = VIews;
+			sourceTree = "<group>";
+		};
+		207D21F41D92E5A800A25C19 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				207D21F51D92E5A800A25C19 /* SnapKit修改版 */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		207D21F51D92E5A800A25C19 /* SnapKit修改版 */ = {
+			isa = PBXGroup;
+			children = (
+				207D21F61D92E5A800A25C19 /* Constraint.swift */,
+				207D21F71D92E5A800A25C19 /* ConstraintAttributes.swift */,
+				207D21F81D92E5A800A25C19 /* ConstraintDescription.swift */,
+				207D21F91D92E5A800A25C19 /* ConstraintItem.swift */,
+				207D21FA1D92E5A800A25C19 /* ConstraintMaker.swift */,
+				207D21FB1D92E5A800A25C19 /* ConstraintRelation.swift */,
+				207D21FC1D92E5A800A25C19 /* Debugging.swift */,
+				207D21FD1D92E5A800A25C19 /* EdgeInsets.swift */,
+				207D21FE1D92E5A800A25C19 /* LayoutConstraint.swift */,
+				207D21FF1D92E5A800A25C19 /* SnapKit.h */,
+				207D22001D92E5A800A25C19 /* SnapKit.swift */,
+				207D22011D92E5A800A25C19 /* View+SnapKit.swift */,
+				207D22021D92E5A800A25C19 /* ViewController+SnapKit.swift */,
+			);
+			path = "SnapKit修改版";
+			sourceTree = "<group>";
+		};
+		207D22131D92FAC400A25C19 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				207D22141D92FAC400A25C19 /* FCCBarButtonItem.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,12 +293,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				207D21D91D92DFD500A25C19 /* FCCSearchView.swift in Sources */,
+				207D22081D92E5A800A25C19 /* ConstraintRelation.swift in Sources */,
+				20C3C7481D9360B9007561DC /* FCCTabBar.swift in Sources */,
+				207D22121D92F70F00A25C19 /* FCCNavViewController.swift in Sources */,
+				207D220C1D92E5A800A25C19 /* SnapKit.swift in Sources */,
 				207D21B51D92D3BC00A25C19 /* FCCProfilesTableViewController.swift in Sources */,
+				207D22151D92FAC400A25C19 /* FCCBarButtonItem.swift in Sources */,
 				207D21901D92CA6C00A25C19 /* AppDelegate.swift in Sources */,
+				207D220A1D92E5A800A25C19 /* EdgeInsets.swift in Sources */,
 				207D21AD1D92CF0300A25C19 /* FCCTabBarViewController.swift in Sources */,
+				207D22061D92E5A800A25C19 /* ConstraintItem.swift in Sources */,
+				207D220D1D92E5A800A25C19 /* View+SnapKit.swift in Sources */,
 				207D21B11D92D3A200A25C19 /* FCCMessageTableViewController.swift in Sources */,
 				207D21AF1D92D0B900A25C19 /* FCCHomeTableViewController.swift in Sources */,
 				207D21B31D92D3B000A25C19 /* FCCDiscoverTableViewController.swift in Sources */,
+				207D220E1D92E5A800A25C19 /* ViewController+SnapKit.swift in Sources */,
+				207D22101D92F5FE00A25C19 /* FCCShowTitleViewController.swift in Sources */,
+				207D220B1D92E5A800A25C19 /* LayoutConstraint.swift in Sources */,
+				207D22031D92E5A800A25C19 /* Constraint.swift in Sources */,
+				207D22091D92E5A800A25C19 /* Debugging.swift in Sources */,
+				207D21B71D92D8EF00A25C19 /* FCCVistorTableViewController.swift in Sources */,
+				207D22071D92E5A800A25C19 /* ConstraintMaker.swift in Sources */,
+				207D22041D92E5A800A25C19 /* ConstraintAttributes.swift in Sources */,
+				207D22051D92E5A800A25C19 /* ConstraintDescription.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +461,7 @@
 				207D21A01D92CA6D00A25C19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
