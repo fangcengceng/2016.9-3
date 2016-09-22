@@ -8,8 +8,12 @@
 
 import UIKit
 
+
 //新浪授权appket
 let weiboAppKey = "1799735418"
+//新浪APPseceret
+let weiboAPPSecret = "cd8fe6e01edbf4cd5081953cffba189f"
+
 //新浪授权回调页
 let weiboRedirect_Uri = "http://www.bejson.com/jsonviewernew"
 
@@ -62,6 +66,64 @@ class HMHMOAuthViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    //通过code 获取accessToken
+    func requestToken(code:String) {
+        NetworkTool.sharedtool.requeryAccessToken(code: code) { (response, error) in
+            
+            if error != nil{
+                print("网络请求异常\(error)")
+                return
+            }
+            
+            guard let dic = response as? [String: Any] else{
+                
+                print("创来的字典格式有错")
+                return
+                
+            }
+            
+            //代码执行到此，表示字典格式没有问题,进行字典转模型
+            let user = HMUserAccount(dic: dic)
+            
+            print(user.access_token)
+            //闭包执行来的需要self
+          self.requestUserInfo(useraccount: user)
+            
+   
+            
+        }
+    }
+    //根据accessToken和userid 获取用户信息
+    func requestUserInfo(useraccount:HMUserAccount) {
+        NetworkTool.sharedtool.requestUserInfo(accessToken: useraccount.access_token!, uid: useraccount.uid) { (response, error) in
+            
+            if error != nil{
+                print("网络请求异常")
+            }
+            
+            guard let dic = response as? [String: Any] else{
+                
+                print("字典格式有错误")
+                return
+            }
+            
+            let name = dic["name"]
+            let profile_image_url = dic["profile_image_url"]
+            
+            useraccount.name = name as? String
+            useraccount.profile_image_url = profile_image_url as? String
+            
+            
+            print(useraccount.name)
+            
+        }
+        
+        
+        
+    }
+    
+    
+    
     //END
 }
 
@@ -90,36 +152,31 @@ extension HMHMOAuthViewController:UIWebViewDelegate{
             //  根据光标的结束位置获取子串
             print(query)
             let code = query.substring(from: "code=".endIndex)
-            
-            print(code)
+        
+            //回调闭包
+            requestToken(code: code)
+
         }
-        
-        
-        
-        
-        
-        //return true表示网页可以加载，return false 表示禁止网页加载
         return false
     }
     
-
-
     //开始加载
     func webViewDidStartLoad(_ webView: UIWebView) {
-        print("webViewDidStartLoad")
+       
+//        SVProgressHUD.show()
         
     }
     //结束加载
     func webViewDidFinishLoad(_ webView: UIWebView) {
         print("")
+//        SVProgressHUD.dismiss()
     }
     //加载失败
     func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
-        
+//        SVProgressHUD.dismiss()
     }
     
-    
-    
+
     
 }
 

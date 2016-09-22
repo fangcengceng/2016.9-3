@@ -34,9 +34,11 @@
 		208F7A291D90B9780020002D /* HMDIscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208F7A261D90B9780020002D /* HMDIscoverView.swift */; };
 		208F7A2A1D90B9780020002D /* HMDIscoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 208F7A271D90B9780020002D /* HMDIscoverView.xib */; };
 		208F7A2B1D90B9780020002D /* HMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208F7A281D90B9780020002D /* HMTextField.swift */; };
+		20AB73011D94235300B8D66E /* HMUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AB73001D94235300B8D66E /* HMUserAccount.swift */; };
 		20BEEC821D8F8AB7004C1190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BEEC811D8F8AB7004C1190 /* AppDelegate.swift */; };
 		20BEEC891D8F8AB7004C1190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BEEC881D8F8AB7004C1190 /* Assets.xcassets */; };
 		20BEECA31D8FBB62004C1190 /* HMMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BEECA01D8FBB62004C1190 /* HMMainViewController.swift */; };
+		20C3C7CB1D94012A007561DC /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C3C7CA1D94012A007561DC /* NetworkTool.swift */; };
 		CD780DF4ECBB0782A1371E72 /* Pods_9_19____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EC394DC379FAEC4156FB52 /* Pods_9_19____.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,11 +71,13 @@
 		208F7A261D90B9780020002D /* HMDIscoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMDIscoverView.swift; sourceTree = "<group>"; };
 		208F7A271D90B9780020002D /* HMDIscoverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMDIscoverView.xib; sourceTree = "<group>"; };
 		208F7A281D90B9780020002D /* HMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMTextField.swift; sourceTree = "<group>"; };
+		20AB73001D94235300B8D66E /* HMUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMUserAccount.swift; path = ../VIews/Main/SINAregister/HMUserAccount.swift; sourceTree = "<group>"; };
 		20BEEC7E1D8F8AB7004C1190 /* 9.19新浪微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "9.19新浪微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BEEC811D8F8AB7004C1190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20BEEC881D8F8AB7004C1190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20BEEC8D1D8F8AB8004C1190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20BEECA01D8FBB62004C1190 /* HMMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMMainViewController.swift; sourceTree = "<group>"; };
+		20C3C7CA1D94012A007561DC /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		30EC394DC379FAEC4156FB52 /* Pods_9_19____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_9_19____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61D3C2DE36942E1F98C1CA60 /* Pods-9.19新浪微博.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9.19新浪微博.debug.xcconfig"; path = "Pods/Target Support Files/Pods-9.19新浪微博/Pods-9.19新浪微博.debug.xcconfig"; sourceTree = "<group>"; };
 		85900DD1B322498F420EC3C2 /* Pods-9.19新浪微博.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9.19新浪微博.release.xcconfig"; path = "Pods/Target Support Files/Pods-9.19新浪微博/Pods-9.19新浪微博.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,12 +125,12 @@
 			path = "../../SnapKit修改版 2";
 			sourceTree = "<group>";
 		};
-		207D21801D92897400A25C19 /* SINAregister */ = {
+		207D21801D92897400A25C19 /* HMOAuth */ = {
 			isa = PBXGroup;
 			children = (
 				207D21811D92897400A25C19 /* HMHMOAuthViewController.swift */,
 			);
-			name = SINAregister;
+			name = HMOAuth;
 			path = Main/SINAregister;
 			sourceTree = "<group>";
 		};
@@ -183,6 +187,7 @@
 		20BEEC981D8FBB62004C1190 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				20AB73001D94235300B8D66E /* HMUserAccount.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 		20BEEC9A1D8FBB62004C1190 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				20C3C7CA1D94012A007561DC /* NetworkTool.swift */,
 				207D21641D92778000A25C19 /* SnapKit修改版 2 */,
 				2083A0831D902EC0006BA3DB /* HMVIew + extension.swift */,
 				2083A0851D9036E9006BA3DB /* UIBarButtonItem+Extention.swift */,
@@ -208,7 +214,7 @@
 		20BEEC9B1D8FBB62004C1190 /* VIews */ = {
 			isa = PBXGroup;
 			children = (
-				207D21801D92897400A25C19 /* SINAregister */,
+				207D21801D92897400A25C19 /* HMOAuth */,
 				20BEEC9F1D8FBB62004C1190 /* Main */,
 				20BEEC9D1D8FBB62004C1190 /* Home */,
 				20BEEC9C1D8FBB62004C1190 /* Discover */,
@@ -419,9 +425,11 @@
 				207D21611D925A9600A25C19 /* HMVistorTableViewController.swift in Sources */,
 				207D21771D92778000A25C19 /* ConstraintRelation.swift in Sources */,
 				207D217D1D92778000A25C19 /* ViewController+SnapKit.swift in Sources */,
+				20AB73011D94235300B8D66E /* HMUserAccount.swift in Sources */,
 				2083A0781D900882006BA3DB /* HMHomeTableViewController.swift in Sources */,
 				207D21631D9260BD00A25C19 /* HMVistorVIew.swift in Sources */,
 				20BEECA31D8FBB62004C1190 /* HMMainViewController.swift in Sources */,
+				20C3C7CB1D94012A007561DC /* NetworkTool.swift in Sources */,
 				2083A0861D9036E9006BA3DB /* UIBarButtonItem+Extention.swift in Sources */,
 				20BEEC821D8F8AB7004C1190 /* AppDelegate.swift in Sources */,
 				207D21791D92778000A25C19 /* EdgeInsets.swift in Sources */,
