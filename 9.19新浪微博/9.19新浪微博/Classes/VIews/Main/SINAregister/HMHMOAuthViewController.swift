@@ -7,15 +7,15 @@
 //
 
 import UIKit
+import SVProgressHUD
 
-
-//新浪授权appket
-let weiboAppKey = "1799735418"
-//新浪APPseceret
-let weiboAPPSecret = "cd8fe6e01edbf4cd5081953cffba189f"
-
-//新浪授权回调页
-let weiboRedirect_Uri = "http://www.bejson.com/jsonviewernew"
+//  第三方登录视图控制器
+//  新浪开发平台提供的APPKey
+let WeiboAppKey = "2707543009"
+//  AppSecret
+let WeiboAppSecret = "975492f53ff3df657f0c435e935ef822"
+//  授权回调页
+let WeiboRedirect_Uri = "http://www.itcast.cn"
 
 class HMHMOAuthViewController: UIViewController {
 
@@ -33,20 +33,18 @@ class HMHMOAuthViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         //准备url
-        let urlStr = "https://api.weibo.com/oauth2/authorize?client_id=\(weiboAppKey)&redirect_uri=\(weiboRedirect_Uri)"
-        print(urlStr)
-        
-        
-        let urlRequest = URLRequest(url: URL(string: urlStr)!)
+       let url = "https://api.weibo.com/oauth2/authorize?client_id=\(WeiboAppKey)&redirect_uri=\(WeiboRedirect_Uri)"
+
+        let urlRequest = URLRequest(url: URL(string: url)!)
         
      //加载数据,并解决背景黑条问题
           outhView.isOpaque = false
         outhView.loadRequest(urlRequest)
         
         //获取授权码code
-        outhView.delegate = self
+         outhView.delegate = self
         
-    addNavItem()
+         addNavItem()
     }
 
     //添加导航栏左右按钮
@@ -54,8 +52,9 @@ class HMHMOAuthViewController: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "取消", target: self, action: #selector(popPresentController))
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "自动填充", target: self, action: #selector(autoFillAction))
     }
+    //自动填充按钮
     @objc private func autoFillAction(){
-        outhView.stringByEvaluatingJavaScript(from: "document.getElementById('userId').value = '13140103066';document.getElementById('passwd').value = 'fcc198709166'")
+    outhView.stringByEvaluatingJavaScript(from: "document.getElementById('userId').value = 'hao123guohaibin@163.com';document.getElementById('passwd').value = 'guohaibin123'")
         
     }
     
@@ -65,66 +64,64 @@ class HMHMOAuthViewController: UIViewController {
        
         dismiss(animated: true, completion: nil)
     }
-    
-    //通过code 获取accessToken
-    func requestToken(code:String) {
-        NetworkTool.sharedtool.requeryAccessToken(code: code) { (response, error) in
-            
-            if error != nil{
-                print("网络请求异常\(error)")
-                return
-            }
-            
-            guard let dic = response as? [String: Any] else{
-                
-                print("创来的字典格式有错")
-                return
-                
-            }
-            
-            //代码执行到此，表示字典格式没有问题,进行字典转模型
-            let user = HMUserAccount(dic: dic)
-            
-            print(user.access_token)
-            //闭包执行来的需要self
-          self.requestUserInfo(useraccount: user)
-            
    
-            
-        }
-    }
-    //根据accessToken和userid 获取用户信息
-    func requestUserInfo(useraccount:HMUserAccount) {
-        NetworkTool.sharedtool.requestUserInfo(accessToken: useraccount.access_token!, uid: useraccount.uid) { (response, error) in
-            
-            if error != nil{
-                print("网络请求异常")
-            }
-            
-            guard let dic = response as? [String: Any] else{
-                
-                print("字典格式有错误")
+    //请求accesToken的方法
+    func requestAccesstoken(code: String) {
+        
+        NetworkTool.sharedtool.requestAccessToken(code: code) { (response, error) in
+            if error != nil {
+                print("网络请求异常: \(error)")
                 return
             }
             
-            let name = dic["name"]
-            let profile_image_url = dic["profile_image_url"]
+            //  代码执行到此,网络请求成功
+            guard let dic = response as? [String: Any] else {
+                print("你是不是一个正确的字典格式")
+                return
+            }
             
-            useraccount.name = name as? String
-            useraccount.profile_image_url = profile_image_url as? String
-            
-            
-            print(useraccount.name)
-            
+          let useraccount = HMUserAccount(dic: dic)
+            print(useraccount.access_token)
+           self.requestUseIfo(useraccount: useraccount)
+
         }
-        
-        
         
     }
     
+//    //请求用户信息的方法
+//    func requestUseIfo(useraccount:HMUserAccount) {
+//        NetworkTool.sharedtool.requestUseInfo(accessToke: useraccount.access_token!, UID: useraccount.uid) { (response, error) in
+//          
+//            if error != nil{
+//                print(error)
+//                print("网路请求出错")
+//                return
+//            }
+//            
+//            guard let dic = response as? [String: Any] else{
+//                print("字典格式不正确")
+//                return
+//            }
+//            
+//            let name = dic["name"]
+//            let avatar_large = dic["avatar_large"]
+//            
+//            useraccount.name = name as? String
+//            useraccount.avatar_large = avatar_large as? String
+//        //代码执行到此，表示需要进行存储
+//            useraccount.saveuseraccount()
+//            
+//            
+//            
+//        }
     
+        
+        
+        
+    //}
     
     //END
+ 
 }
 
 //分类，webview代理
@@ -133,50 +130,53 @@ extension HMHMOAuthViewController:UIWebViewDelegate{
     
     //将要准备加载
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-        //判断url是否合法
+        
+        //  判断url是否合法
         guard let url = request.url else {
-            print("url不合法")
-            return  false
             
+            print("url 为 nil")
+            
+            return false
         }
         
-        print(url.absoluteString)
+        print( url.absoluteString)
         
-        if  !url.absoluteString .hasPrefix(weiboRedirect_Uri){
-            //表示不是我们关心的
+        if !url.absoluteString.hasPrefix(WeiboRedirect_Uri) {
+            //  表示不是我们关心
             return true
         }
         
-        //代码执行到此，表示是我们关心的请求参数，获取，地址的参数，获得授权
+        //  代码执行到此表示是是我们关系的请求地址
+        //  取到地址栏中的参数
         if let query = url.query , query.hasPrefix("code=") {
             //  根据光标的结束位置获取子串
-            print(query)
             let code = query.substring(from: "code=".endIndex)
-        
-            //回调闭包
-            requestToken(code: code)
-
+            //  通过code获取accesstoken
+            requestAccesstoken(code: code)
+            
         }
+        
+        
+        
+        
         return false
     }
     
+
     //开始加载
     func webViewDidStartLoad(_ webView: UIWebView) {
-       
-//        SVProgressHUD.show()
+
+        SVProgressHUD.show()
         
     }
     //结束加载
     func webViewDidFinishLoad(_ webView: UIWebView) {
-        print("")
-//        SVProgressHUD.dismiss()
+       SVProgressHUD.dismiss()
     }
     //加载失败
     func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
-//        SVProgressHUD.dismiss()
+        SVProgressHUD.dismiss()
     }
-    
-
     
 }
 

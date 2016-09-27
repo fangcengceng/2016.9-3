@@ -49,38 +49,39 @@ class NetworkTool: AFHTTPSessionManager {
     //END
 }
 
-
-//网络相关接口处理
 extension NetworkTool{
+    
     //  根据code获取accesstoken
-    func requeryAccessToken(code:String,callBack:@escaping(Any?,Error?)->()){
-        
+    func requestAccessToken(code: String, callBack: @escaping (Any?, Error?)->()) {
+        //  请求接口地址
         let url = "https://api.weibo.com/oauth2/access_token"
-        let parameters = ["client_id":weiboAppKey,
-                        "client_secret":weiboAPPSecret,
-                        "grant_type":"authorization_code",
-                        "code":code,
-                        "redirect_uri": weiboRedirect_Uri
-                          ]
-    NetworkTool.sharedtool.requestType(type: .POST, url: url, parameters: parameters, callback: callBack)
-        
-
+        //  准备请求需要的参数
+        let params = [
+            "client_id": WeiboAppKey,
+            "client_secret": WeiboAppSecret,
+            "grant_type": "authorization_code",
+            "code": code,
+            "redirect_uri": WeiboRedirect_Uri
+            
+        ]
+        //  使用封装好的get/post请求
+        requestType(type: .POST, url: url, parameters: params, callback: callBack)
     }
     
-    //通过accessToken获取用户相关信息
-    func requestUserInfo(accessToken: String, uid: Int64, callBack:@escaping(Any?,Error?)->())  {
-        //网络请求接口
+    //根据accesstoken 获取用户信息
+    
+    func requestUseInfo(accessToke: String,UID: Int64,calllBack:@escaping ((Any?,Error?)->())) {
         let url = "https://api.weibo.com/2/users/show.json"
-        //网络请求参数
-        let paramters: [String: Any?] = [ "access_token": accessToken,
-                                          "uid": uid]
-        
-      requestType(type: .GET, url: url, parameters: paramters, callback: callBack)
-
+        let parameters:[String: Any] = ["access_token":accessToke,"uid":UID]
+        requestType(type: .GET, url: url, parameters: parameters, callback: calllBack)
+    
     }
     
     
     
+//END
 }
+
+
 
 

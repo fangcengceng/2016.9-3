@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  9.19新浪微博
+//  day1
 //
-//  Created by codygao on 16/9/19.
+//  Created by codygao on 16/9/23.
 //  Copyright © 2016年 HM. All rights reserved.
 //
 
@@ -15,14 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        let useracount = HMUserAccount.readuseraccount()
-        window = UIWindow(frame: UIScreen.main.bounds)
-        let root = HMMainViewController()
-        window?.rootViewController = root
-        //设置标签栏的颜色，不在是默认的蓝色
-//        UITabBar.appearance().tintColor = UIColor.orange
-        window?.makeKeyAndVisible()
+        // Override point for customization after application launch.
         return true
     }
 
